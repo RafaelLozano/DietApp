@@ -7,6 +7,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 import Feather from 'react-native-vector-icons/Feather'
 import HomeScreen from '../../../Screens/HomeScreen/HomeScreen'
 import { color } from 'react-native-reanimated';
+import DetailScreen from '../../../Screens/DetailScreen/DetailScreen';
 const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => {
@@ -52,7 +53,7 @@ const TabNavigator = () => {
                 />
                 <Tab.Screen
                     name={"Goal"}
-                    component={HomeScreen}
+                    component={DetailScreen}
                     options={{
                         tabBarIcon: ({ color }) => (
                             <Ionicons name={"md-ribbon-sharp"} size={25} color={'#e5e5e5'} />

@@ -3,13 +3,14 @@ const styles = StyleSheet.create({
     mainContainer:{
         flex:1,
         justifyContent:'center',
-        backgroundColor:'#e5e5e5'
+        backgroundColor:'#e5e5e5',
+        height:'100%',
     },
     backgroundImage:{
         height:'100%',
         width:'100%',
         position:'absolute',
-        alignItems:'center'
+        alignItems:'center',
     },
     image:{ 
         height: '30%', 
