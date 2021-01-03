@@ -23,7 +23,9 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Card from './src/Components/Card/card';
 import Router from './src/Components/Navigation/Router';
+import HomeScreen from './src/Screens/HomeScreen/HomeScreen';
 import LoginScreen from './src/Screens/LoginScreen/LoginScreen';
 import WelcomeScreen from './src/Screens/WelcomeScreen/WelcomeScreen';
 
@@ -32,8 +34,12 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       {/* <WelcomeScreen/> */}
-      <Router/> 
+      {/* <Router/>  */}
       {/* <LoginScreen/> */}
+      {/* <HomeScreen/> */}
+      <SafeAreaView>
+        <Card/>
+      </SafeAreaView>
     </>
   );
 };
