@@ -29,6 +29,7 @@ const HomeScreen = () => {
                 />
             </View>
             
+            
         </ImageBackground>
     )
 }

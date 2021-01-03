@@ -27,7 +27,7 @@ const Router = () => {
                 />
                 <Stack.Screen
                     name={"Home"}
-                    component={HomeScreen}
+                    component={TabNavigator}
                     options={{
                         headerShown: false,
                     }}

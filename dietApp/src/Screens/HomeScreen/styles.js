@@ -5,7 +5,10 @@ const styles = StyleSheet.create({
     },
     background:{
         height:'100%',
+        resizeMode:'cover',
+        position:'absolute',
         paddingHorizontal:20,
+        
     },
     topContainer:{
         marginTop:120,

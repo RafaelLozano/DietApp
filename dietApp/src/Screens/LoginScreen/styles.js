@@ -64,6 +64,8 @@ const styles = StyleSheet.create({
     },
     iconContainer:{
         flexDirection:'row',
+        justifyContent:'center',
+        alignItems:'center',
         
     },
     space:{

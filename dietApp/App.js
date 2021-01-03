@@ -25,6 +25,9 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import Card from './src/Components/Card/card';
 import Router from './src/Components/Navigation/Router';
+import TabNavigator from './src/Components/Navigation/TabNavigator/TabNavigator';
+import DetailScreen from './src/Screens/DetailScreen/DetailScreen';
+
 import HomeScreen from './src/Screens/HomeScreen/HomeScreen';
 import LoginScreen from './src/Screens/LoginScreen/LoginScreen';
 import WelcomeScreen from './src/Screens/WelcomeScreen/WelcomeScreen';
@@ -34,9 +37,11 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       {/* <WelcomeScreen/> */}
-      <Router/> 
+      {/* <Router/>  */}
+      {/* <TabNavigator/> */}
       {/* <LoginScreen/> */}
       {/* <HomeScreen/> */}
+      <DetailScreen/>
       
     </>
   );
