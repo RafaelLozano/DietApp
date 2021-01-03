@@ -3,7 +3,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import WelcomeScreen from '../../Screens/WelcomeScreen/WelcomeScreen';
 import LoginScreen from '../../Screens/LoginScreen/LoginScreen';
-
+import HomeScreen from '../../Screens/HomeScreen/HomeScreen';
+import TabNavigator from './TabNavigator/TabNavigator';
 const Stack = createStackNavigator();
 const Router = () => {
     
@@ -20,6 +21,13 @@ const Router = () => {
                 <Stack.Screen
                     name={"Login"}
                     component={LoginScreen}
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+                <Stack.Screen
+                    name={"Home"}
+                    component={HomeScreen}
                     options={{
                         headerShown: false,
                     }}

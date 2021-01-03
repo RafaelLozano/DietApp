@@ -34,12 +34,10 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       {/* <WelcomeScreen/> */}
-      {/* <Router/>  */}
+      <Router/> 
       {/* <LoginScreen/> */}
       {/* <HomeScreen/> */}
-      <SafeAreaView>
-        <Card/>
-      </SafeAreaView>
+      
     </>
   );
 };

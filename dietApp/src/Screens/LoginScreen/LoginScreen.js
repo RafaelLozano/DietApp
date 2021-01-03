@@ -3,13 +3,14 @@ import { Text, View, TextInput, Pressable, ImageBackground, StatusBar} from 'rea
 import styles from './styles';
 import Entypo from'react-native-vector-icons/Entypo'
 import AntDesign from'react-native-vector-icons/AntDesign'
-
+import { useNavigation } from '@react-navigation/native'
 const LoginScreen = () => {
     const { emailText, setEmailText } = useState('');
     const { passText, setPassText } = useState('');
+    const navigator = useNavigation();
     return (
         
-        <ImageBackground style={styles.mainContainer} source={require('../../../assets/images/BackgroundScreen2a.png')}>
+        <ImageBackground style={styles.mainContainer} source={require('../../../assets/images/BackgroundScreen_2.png')}>
             {/* title */}
             <StatusBar barStyle="light-content" />
             
@@ -38,7 +39,7 @@ const LoginScreen = () => {
             {/* login botton */}
             <Pressable
                 style={styles.button}
-                onPress={() => { console.warn('clicked!') }}
+                onPress={() => navigator.navigate('Home')}
             >
                 <Text style={styles.buttonText}>Login</Text>
             </Pressable>

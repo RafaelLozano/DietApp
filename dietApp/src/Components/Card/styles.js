@@ -5,11 +5,12 @@ const styles = StyleSheet.create({
         alignItems:'center',
     },
     mainContainer:{
-        backgroundColor:'#e5e5e5',
-        width:'65%',
+        backgroundColor:'white',
+        width:300,
         borderRadius:10,
         padding:15,
         marginHorizontal:10,
+        
     },
     title:{
         fontWeight:'bold',
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
     percentageCenter: {
         width: 60,
         height: 60,
-        backgroundColor: '#e5e5e5',
+        backgroundColor: 'white',
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 35,

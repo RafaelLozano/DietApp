@@ -1,26 +1,27 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 import styles from './styles'
-const Card = () => {
+const Card = (props) => {
+    const {info} = props;
     return (
         <View style={styles.mainContainer}>
             {/* tittle  */}
-            <Text style={styles.title}>Results of the week</Text>
+            <Text style={styles.title}>{info.title}</Text>
             <View style={styles.statsContainer}>
                 {/* 3 data */}
                 <View style={{alignItems:'center',marginRight:20,}}>
                     <Text style={{ color:'grey',fontSize:10}}>You have lost</Text>
-                    <Text style={{ color: '#58be75', fontWeight: 'bold', fontSize:18}}>-4Kg</Text>
+                    <Text style={{ color: '#58be75', fontWeight: 'bold', fontSize:18}}>{info.weight}Kg</Text>
                 </View>
 
                 <View style={{alignItems:'center',marginRight:20}}>
                     <Text style={{ color: 'grey', fontSize: 10}}>You level up</Text>
-                    <Text style={{ color: '#58be75', fontWeight: 'bold', fontSize: 18}}>Level 8</Text>
+                    <Text style={{ color: '#58be75', fontWeight: 'bold', fontSize: 18}}>Level {info.level}</Text>
                 </View>
 
                 <View style={styles.percentageIndicator}>
                     <View style={styles.percentageCenter}>
-                        <Text styles={{ fontWeight:'bold' }}>520</Text>
+                        <Text styles={{ fontWeight:'bold' }}>{info.kcal}</Text>
                         <Text styles={{ fontWeight: 'bold' }}>Kcal</Text>
                     </View>
                 </View>

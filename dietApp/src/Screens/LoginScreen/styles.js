@@ -19,21 +19,23 @@ const styles = StyleSheet.create({
     },
     emailInput: {
         fontSize: 20,
-        backgroundColor: '#e5e5e5',
+        backgroundColor: 'white',
         width: '100%',
         height: 40,
         marginBottom:40,
         paddingHorizontal: 30,
-        color:'black'
+        color:'black',
+        borderRadius:5,
     },   
     passInput:{
         fontSize: 20,
-        backgroundColor:'#e5e5e5',
+        backgroundColor:'white',
         width:'100%',
         height: 40,
         paddingHorizontal:30,
         color:'black',
         marginBottom: 40,
+        borderRadius:5,
 
     },
     inputField:{
@@ -68,7 +70,6 @@ const styles = StyleSheet.create({
         width:'20%'
     },
     background: {
-        width: '%',
         height: '100%',
         resizeMode: 'cover',
         justifyContent: 'center',

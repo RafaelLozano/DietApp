@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     },
     textContainer:{
         marginHorizontal:40,
+        color:'white',
     },
     title:{
         fontSize:25,
