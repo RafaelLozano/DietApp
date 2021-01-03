@@ -10,7 +10,7 @@ const Button = (props) => {
         <View style={styles.mainContainer}>
             <Pressable
                 style={[styles.button, { backgroundColor: backgroundColor }]}
-                onPress={() => { console.warn('clicked!') }}
+                onPress={() => onPress()}
             >
                 <Text style={[styles.buttonText,{color:textColor}]}>{content}</Text>
             </Pressable>

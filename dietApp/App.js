@@ -23,13 +23,17 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Router from './src/Components/Navigation/Router';
+import LoginScreen from './src/Screens/LoginScreen/LoginScreen';
 import WelcomeScreen from './src/Screens/WelcomeScreen/WelcomeScreen';
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <WelcomeScreen/>
+      {/* <WelcomeScreen/> */}
+      <Router/> 
+      {/* <LoginScreen/> */}
     </>
   );
 };

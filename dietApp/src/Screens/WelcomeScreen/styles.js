@@ -3,13 +3,15 @@ import { StyleSheet } from 'react-native'
 const styles = StyleSheet.create({
     image:{
         height:'75%',
-        width:'100%'
+        width:'100%',
+        zIndex:-1,
+        position:'absolute',
     },
     mainContainer:{
         
     },
     textContainer:{
-
+        marginHorizontal:40,
     },
     title:{
         fontSize:25,
@@ -20,12 +22,21 @@ const styles = StyleSheet.create({
     },
     subTitle:{
         color:'grey',
+        textAlign:'center',
     },
     buttonContainer: {
         flexDirection: 'row',
         justifyContent: 'space-around',
         top: 50,
     },
+    background:{
+        height: '75%',
+        width: '100%',
+        zIndex:10,
+        top:'20%'
+        
+    }
+    
     
 })
 
