@@ -3,7 +3,7 @@ import { Text, View, ImageBackground, StatusBar ,Image} from 'react-native'
 import styles from './styles';
 
 const DetailScreen = (props) => {
-    const data = props.data;
+    
     return (
         <View style={styles.mainContainer}>
             <StatusBar barStyle="light-content" />
@@ -17,7 +17,7 @@ const DetailScreen = (props) => {
 
                 <View style={{alignItems:'center',width:'80%',marginBottom:10,}}>
                     {/* Title */}
-                    <Text style={styles.title}>Title</Text>
+                    <Text style={styles.title}>Yogurt with fruits</Text>
                     {/* Description */}
                     <Text numberOfLines={2} style={{color:'grey',textAlign:'center',}}>
                         Lorem ipsum dolor sit amet consectetur adipiscing elit, ante elementum praesent pharetra cras class cubilia,

@@ -5,13 +5,13 @@ import dataBreakfast from '../../../assets/data/dataBreakfast'
 
 const Post = (props) => {
     const item = props.item;
-    const image = props.item.image;
+   
     const navigator = useNavigation();
-    const [data, setData] = useState(dataBreakfast)
+    
     return (
         <Pressable
             onPress={() => {
-                navigator.navigate('Details',data)
+                navigator.navigate('Details')
             }}
         >
             <View style={{justifyContent:'center',alignItems:'center'}}>
