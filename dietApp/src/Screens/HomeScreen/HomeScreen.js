@@ -1,14 +1,15 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Text, View, FlatList, StatusBar, ImageBackground,Pressable} from 'react-native'
 import Card from '../../Components/Card/card'
 import Post from '../../Components/Post/Post';
-
-import data from'../../../assets/data/data'
 import dataBreakfast from '../../../assets/data/dataBreakfast'
+import data from'../../../assets/data/data'
+
 import styles from'./styles'
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const HomeScreen = () => {
+    
     return (
         <ImageBackground style={styles.background} source={require('../../../assets/images/BackgroundScreen_3.png')} >
             <StatusBar barStyle="light-content" />
@@ -43,6 +44,7 @@ const HomeScreen = () => {
                     renderItem={({ item }) => <Post item={item} />}
                     horizontal
                     showsHorizontalScrollIndicator={false}
+                    
                 />
             </View>
 

@@ -5,6 +5,7 @@ import WelcomeScreen from '../../Screens/WelcomeScreen/WelcomeScreen';
 import LoginScreen from '../../Screens/LoginScreen/LoginScreen';
 import HomeScreen from '../../Screens/HomeScreen/HomeScreen';
 import TabNavigator from './TabNavigator/TabNavigator';
+import DetailScreen from '../../Screens/DetailScreen/DetailScreen';
 const Stack = createStackNavigator();
 const Router = () => {
     
@@ -28,6 +29,13 @@ const Router = () => {
                 <Stack.Screen
                     name={"Home"}
                     component={TabNavigator}
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+                <Stack.Screen
+                    name={"Details"}
+                    component={DetailScreen}
                     options={{
                         headerShown: false,
                     }}
