@@ -38,9 +38,9 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       {/* <WelcomeScreen/> */}
-      <Router/> 
+      {/* <Router/>  */}
       {/* <TabNavigator/> */}
-      {/* <LoginScreen/> */}
+      <LoginScreen/>
       {/* <HomeScreen/> */}
       {/* <DetailScreen/> */}
       {/* <Post item={dataBreakfast}></Post> */}
