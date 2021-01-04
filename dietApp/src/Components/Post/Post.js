@@ -2,30 +2,31 @@ import React, {useState}from 'react'
 import { Text, View ,Image,Pressable} from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import dataBreakfast from '../../../assets/data/dataBreakfast'
-
+import styles from'./styles'
 const Post = (props) => {
     const item = props.item;
    
     const navigator = useNavigation();
     
     return (
-        <Pressable
-            onPress={() => {
-                navigator.navigate('Details')
-            }}
-        >
-            <View style={{justifyContent:'center',alignItems:'center'}}>
+        
+         <View style={styles.mainContainer}>
+            <Pressable
+                onPress={() => {
+                    navigator.navigate('Details', item)
+                }}
+            >
                 <Image
                     source={{uri:item.image}}
                     
-                    style={{height:250,aspectRatio:2/3,borderRadius:25,marginBottom:10,marginHorizontal:10}}
+                    style={styles.image}
                 // resizeMode={'stretch'}
                 />
 
                 
                 <Text style={{fontSize:18,fontWeight:'bold',}}>{item.title}</Text>
-            </View> 
-        </Pressable>
+            </Pressable>
+         </View> 
     )
 }
 

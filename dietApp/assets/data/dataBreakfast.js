@@ -1,7 +1,7 @@
 export default [
     {
         id: '0',
-        title: 'Results of the week 1',
+        title: 'Meal 1',
         description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, ante elementum praesent pharetra cras class cubilia ultrices hac id bibendum porttitor integer.Convallis phasellus auctor fringilla blandit est congue consequat scelerisque, curabitur metus potenti faucibus orci eu sollicitudin condimentum eros, aptent dis dapibus cras lacinia vitae sagittis',
         calories: 245,
         grases: '2,8g',
@@ -12,7 +12,7 @@ export default [
     },
     {
         id: '1',
-        title: 'Results of the week 2',
+        title: 'Meal 2',
         description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, ante elementum praesent pharetra cras class cubilia ultrices hac id bibendum porttitor integer.Convallis phasellus auctor fringilla blandit est congue consequat scelerisque, curabitur metus potenti faucibus orci eu sollicitudin condimentum eros, aptent dis dapibus cras lacinia vitae sagittis',
         calories: 245,
         grases: '2,8g',
@@ -22,7 +22,7 @@ export default [
     },
     {
         id: '2',
-        title: 'Results of the week 3',
+        title: 'Meal 3',
         description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, ante elementum praesent pharetra cras class cubilia ultrices hac id bibendum porttitor integer.Convallis phasellus auctor fringilla blandit est congue consequat scelerisque, curabitur metus potenti faucibus orci eu sollicitudin condimentum eros, aptent dis dapibus cras lacinia vitae sagittis',
         calories: 245,
         grases: '2,8g',
