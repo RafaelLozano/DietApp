@@ -2,8 +2,6 @@ import { StyleSheet } from 'react-native'
 const styles = StyleSheet.create({
     mainContainer:{
         height:'100%',
-        justifyContent:'center',
-        alignItems:'center',
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -15,12 +13,11 @@ const styles = StyleSheet.create({
         elevation: 10,
     },
     image:{
-        height: '100%',
+        height: '80%',
         borderRadius: 25, 
         aspectRatio: 2 / 3, 
         marginBottom: 10,
         marginHorizontal: 10,
-
     }
 })
 export default styles

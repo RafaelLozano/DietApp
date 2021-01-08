@@ -12,8 +12,6 @@ const LoginScreen = () => {
         
         <ImageBackground style={styles.mainContainer} source={require('../../../assets/images/BackgroundScreen_2.png')}>
             {/* title */}
-            <StatusBar barStyle="light-content" />
-            
             <Text style={styles.title}>Welcome</Text>
 
             <View style={styles.inputField}>

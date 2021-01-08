@@ -9,24 +9,19 @@ const Post = (props) => {
     const navigator = useNavigation();
     
     return (
-        
-         <View style={styles.mainContainer}>
-            <Pressable
-                onPress={() => {
-                    navigator.navigate('Details', item)
-                }}
-            >
-                <Image
-                    source={{uri:item.image}}
-                    
-                    style={styles.image}
-                // resizeMode={'stretch'}
-                />
+        <Pressable
+            style={styles.mainContainer}
+            onPress={() => {
+                navigator.navigate('Details', item)
+            }}
+        >
+            <Image
+                source={{uri:item.image}}
+                style={styles.image}
+            />
 
-                
-                <Text style={{fontSize:18,fontWeight:'bold',}}>{item.title}</Text>
-            </Pressable>
-         </View> 
+            <Text style={{fontSize:18,fontWeight:'bold',textAlign:'center'}}>{item.title}</Text>
+        </Pressable>
     )
 }
 

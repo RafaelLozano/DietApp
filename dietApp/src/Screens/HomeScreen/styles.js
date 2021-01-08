@@ -1,29 +1,36 @@
 import { StyleSheet} from 'react-native'
 const styles = StyleSheet.create({
+    background: {
+        height: '100%',
+        resizeMode: 'cover',
+        alignItems: 'center',
+    },
     mainContainer:{
-        width:'90%',
+        width:'100%',
         height:'100%',
         alignItems:'center',
-        justifyContent:'center',
-    },
-    background:{
-        height:'100%',
-        resizeMode:'cover',
+        justifyContent:'center'
         
     },
-    topContainer:{
-        flexDirection:'row',
-        justifyContent:'space-between',
+    activity:{
+        width:'100%',
+        justifyContent:'center',
         alignItems:'center',
-        marginVertical:20,
-    },
-    carousel:{
-        height:'40%'
+        marginTop:40,
+        height:'40%',
+      
     },
     dataStyle:{
-        height:'20%',
-        
-    }
+        height:150,
+        marginBottom:20,
+
+    },
+    
+    carousel:{
+        height:'50%',
+        marginTop:20
+    },
+    
 
 })
 

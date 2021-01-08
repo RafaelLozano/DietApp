@@ -1,4 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
+
+
 const styles = StyleSheet.create({
     statsContainer:{
         flexDirection:'row',
@@ -6,7 +8,7 @@ const styles = StyleSheet.create({
     },
     mainContainer:{
         backgroundColor:'white',
-        width:300,
+        width:200,
         borderRadius:10,
         padding:15,
         marginHorizontal:10,

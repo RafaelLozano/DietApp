@@ -23,7 +23,7 @@ const TabNavigator = () => {
                 style: {
                         borderWidth: 0.5,
                         
-                        backgroundColor: 'white',
+                        
                         borderTopLeftRadius: 15,
                         borderTopRightRadius: 15,
                         
@@ -37,7 +37,7 @@ const TabNavigator = () => {
                     
                     options={{
                         tabBarIcon: ({ color }) => (
-                            <Ionicons name={"md-home-sharp"} size={25} color={'#e5e5e5'} />
+                            <Ionicons name={"md-home-sharp"} size={25} color={'grey'} />
                         )
                         
                     }}
@@ -47,16 +47,16 @@ const TabNavigator = () => {
                     component={HomeScreen}
                     options={{
                         tabBarIcon: ({ color }) => (
-                            <FontAwesome5 name={"user-circle"} size={25} color={'#e5e5e5'} />
+                            <FontAwesome5 name={"user-circle"} size={25} color={'grey'} />
                         )
                     }}
                 />
                 <Tab.Screen
                     name={"Goal"}
-                    component={DetailScreen}
+                component={HomeScreen}
                     options={{
                         tabBarIcon: ({ color }) => (
-                            <Ionicons name={"md-ribbon-sharp"} size={25} color={'#e5e5e5'} />
+                            <Ionicons name={"md-ribbon-sharp"} size={25} color={'grey'} />
                         )
                     }}
                 />
@@ -65,7 +65,7 @@ const TabNavigator = () => {
                     component={HomeScreen}
                     options={{
                         tabBarIcon: ({ color }) => (
-                            <Ionicons name={"settings-sharp"} size={25} color={'#e5e5e5'} />
+                            <Ionicons name={"settings-sharp"} size={25} color={'grey'} />
                         )
                     }}
                 />

@@ -1,10 +1,15 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 import styles from './styles'
+import useWindowDimensions from 'react-native/Libraries/Utilities/useWindowDimensions';
+
+
 const Card = (props) => {
     const {info} = props;
+    let widthh = useWindowDimensions().width;
+    let newW = widthh * 3 / 4;
     return (
-        <View style={styles.mainContainer}>
+        <View style={styles.mainContainer,{width:newW,backgroundColor:'white',marginHorizontal:10,borderRadius:15,padding:15}}>
             {/* tittle  */}
             <Text style={styles.title}>{info.title}</Text>
             <View style={styles.statsContainer}>
